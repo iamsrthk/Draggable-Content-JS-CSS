@@ -1,0 +1,57 @@
+/* styles.css */
+body {
+	font-family: Arial, sans-serif;
+}
+
+.controls {
+	display: flex;
+	justify-content: center;
+	margin-top: 20px;
+}
+
+button {
+	padding: 10px 20px;
+	margin: 0 5px;
+	font-size: 18px;
+	cursor: pointer;
+}
+
+.container {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 10px;
+	justify-content: center;
+	margin-top: 20px;
+}
+
+.draggable {
+	width: 100px;
+	height: 100px;
+	background-color: #007bff;
+	color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: grab;
+	border-radius: 5px;
+	position: absolute;
+}
+
+.draggable:active {
+	cursor: grabbing;
+}
+
+.dropzone {
+	width: 200px;
+	height: 200px;
+	border: 2px dashed #007bff;
+	margin-top: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: background-color 0.3s;
+}
+
+.dropzone:hover {
+	background-color: #f0f0f0;
+}
